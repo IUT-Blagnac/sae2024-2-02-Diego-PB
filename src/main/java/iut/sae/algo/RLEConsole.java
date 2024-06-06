@@ -20,6 +20,8 @@ public class RLEConsole{
         }
 
         System.out.println("Entrée : "+in);
-        System.out.println("Sortie : "+ Algo.RLE(in));
+        //System.out.println("Sortie : "+ Algo.RLE(in));
+        System.out.println("Sortie : "+ Simplicite.RLE(in));
+
     }
 }
