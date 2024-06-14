@@ -1,6 +1,5 @@
 ##################################################
-#             Complexité / Python                #
-#              Complexité = O(n)                 #
+#               Sobriete / Python                #
 ##################################################
 
 def encodage_rle(texte):
@@ -40,6 +39,5 @@ def encodage_rle(texte):
     return resultat
 
 ##################################################
-#             Complexité / Python                #
-#              Complexité = O(n)                 #
+#               Sobriete / Python                #
 ##################################################

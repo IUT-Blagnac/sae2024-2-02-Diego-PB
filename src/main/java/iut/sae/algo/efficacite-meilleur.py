@@ -1,6 +1,6 @@
 ##################################################
-#             Complexité / Python                #
-#              Complexité = O(n)                 #
+#             Efficacité / Python                #
+#              Efficacité = O(n)                 #
 ##################################################
 
 def encodage_rle(texte):
@@ -40,6 +40,6 @@ def encodage_rle(texte):
     return resultat
 
 ##################################################
-#             Complexité / Python                #
-#              Complexité = O(n)                 #
+#             Efficacité / Python                #
+#              Efficacité = O(n)                 #
 ##################################################
