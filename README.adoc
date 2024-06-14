@@ -164,8 +164,8 @@ Vous utiliserez le dépôt initial qui vous aura été attribué via classroom p
 [options="header"]
 |==========================================================================
 | #    | lien                                                     | langage  | catégorie 
-| 1    | link:src/main/java/exercice/Exercice1.java[meilleur java]| Java     | Simplicité
-| 2    | link:src/main/java/exercice/Exercice2.java[meilleur C]    | C     | Efficacité
+| 1    | link:src/main/java/exercice/Exercice1.java[meilleur python]| python     | Simplicité
+| 2    | link:src/main/java/exercice/Exercice2.java[meilleur python]    | python     | Complexite
 | ...  | ...                                                      | ...      | ...      
 |==========================================================================
 
