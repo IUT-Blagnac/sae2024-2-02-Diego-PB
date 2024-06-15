@@ -164,9 +164,10 @@ Vous utiliserez le dépôt initial qui vous aura été attribué via classroom p
 [options="header"]
 |==========================================================================
 | #    | lien                                                     | langage  | catégorie 
-| 1    | link:src/main/java/exercice/Exercice1.java[meilleur python]| python     | Simplicité
-| 2    | link:src/main/java/exercice/Exercice2.java[meilleur python]    | python     | Complexite
-| ...  | ...                                                      | ...      | ...      
+| 1    | link:src/main/java/iut/sae/algo/simplicite-meilleur.py[meilleur python]| python     | Simplicité
+| 2    | link:src/main/java/iut/sae/algo/efficacite-meilleur.py[meilleur python]| python     | Efficatcité
+| 3    | link:src/main/java/iut/sae/algo/simplicite.java[java]| java     | Simplicité
+| 4    | link:src/main/java/iut/sae/algo/sobriete-meilleur.py[meilleur python]| python     | Sobriété
 |==========================================================================
 
 === Phase 2 (deadline : **vendredi 21 juin 2024** à minuit)
