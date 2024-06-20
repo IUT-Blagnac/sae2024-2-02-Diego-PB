@@ -1,0 +1,229 @@
+= Rapport d'évaluation des Algotithmes
+:author: Diego Penicaud-Bernal / BUT 1 Informatique / Groupe 4A
+
+== Sommaire
+
+[.text]
+* <<Liste des Algorithmes>>
+* <<Evaluation des Algorithmes>>
+
+
+== Liste des Algorithmes
+
+=== Simplicite
+
+|===
+| Fichier | Langage | Lien vers le code
+| 59simplicite.java | Java   | link:../analyse/59simplicite.java[Code]
+| 26simplicite.py   | Python | link:../analyse/26simplicite.py[Code]
+| 07simplicite.py   | Python | link:../analyse/07simplicite.py[Code]   
+| 11simplicite.java | Java   | link:../analyse/11simplicite.java[Code]
+| 52simplicite.java | Java   | link:../analyse/52simplicite.java[Code]
+|===
+
+=== Efficacite
+
+|===
+| Fichier | Langage | Lien
+| 27efficacite.py   | Python | link:../analyse/27efficacite.py[Code]
+| 25efficacite.java | Java   | link:../analyse/25efficacite.java[Code]
+| 24efficacite.java | Java   | link:../analyse/24efficacite.java[Code]
+| 10efficacite.java | Java   | link:../analyse/10efficacite.java[Code]
+| 61efficacite.java | Java   | link:../analyse/61efficacite.java[Code]
+|===
+
+=== Sobriete
+
+|===
+| Fichier | Langage | Lien
+
+| 46sobriete.java | Java | link:../analyse/46sobriete.java[Code]
+| 36sobriete.java | Java | link:../analyse/36sobriete.java[Code]
+| 20sobriete.java | Java | link:../analyse/20sobriete.java[Code]
+| 61sobriete.c    | C    | link:../analyse/61sobriete.c[Code]
+
+|===
+
+== Evaluation des Algorithmes
+
+=== 59simplicite.java
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | O/N
+| Es ce que l'anonymat est respecté ? | O/N 
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
+| Es ce que le l'algo passe tous les tests fournis initialement | O/N
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+|===
+
+=== 26simplicite.py
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | O/N
+| Es ce que l'anonymat est respecté ? | O/N 
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
+| Es ce que le l'algo passe tous les tests fournis initialement | O/N
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+|===
+
+=== 07simplicite.py
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | O/N
+| Es ce que l'anonymat est respecté ? | O/N 
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
+| Es ce que le l'algo passe tous les tests fournis initialement | O/N
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+|===
+
+=== 11simplicite.java
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | O/N
+| Es ce que l'anonymat est respecté ? | O/N 
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
+| Es ce que le l'algo passe tous les tests fournis initialement | O/N
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+|===
+
+=== 52simplicite.java
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | O/N
+| Es ce que l'anonymat est respecté ? | O/N 
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
+| Es ce que le l'algo passe tous les tests fournis initialement | O/N
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+|===
+
+=== 27efficacite.py
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | O/N
+| Es ce que l'anonymat est respecté ? | O/N 
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
+| Es ce que le l'algo passe tous les tests fournis initialement | O/N
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+|===
+
+=== 25efficacite.java
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | O/N
+| Es ce que l'anonymat est respecté ? | O/N 
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
+| Es ce que le l'algo passe tous les tests fournis initialement | O/N
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+|===
+
+=== 24efficacite.java
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | O/N
+| Es ce que l'anonymat est respecté ? | O/N 
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
+| Es ce que le l'algo passe tous les tests fournis initialement | O/N
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+|===
+
+=== 10efficacite.java
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | O/N
+| Es ce que l'anonymat est respecté ? | O/N 
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
+| Es ce que le l'algo passe tous les tests fournis initialement | O/N
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+|===
+
+=== 61efficacite.java
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | O/N
+| Es ce que l'anonymat est respecté ? | O/N 
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
+| Es ce que le l'algo passe tous les tests fournis initialement | O/N
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+|===
+
+=== 46sobriete.java
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | O/N
+| Es ce que l'anonymat est respecté ? | O/N 
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
+| Es ce que le l'algo passe tous les tests fournis initialement | O/N
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+|===
+
+=== 36sobriete.java
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | O/N
+| Es ce que l'anonymat est respecté ? | O/N 
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
+| Es ce que le l'algo passe tous les tests fournis initialement | O/N
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+|===
+
+=== 20sobriete.java
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | O/N
+| Es ce que l'anonymat est respecté ? | O/N 
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
+| Es ce que le l'algo passe tous les tests fournis initialement | O/N
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+|===
+
+=== 61sobriete.c
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | O/N
+| Es ce que l'anonymat est respecté ? | O/N 
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
+| Es ce que le l'algo passe tous les tests fournis initialement | O/N
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+|===
