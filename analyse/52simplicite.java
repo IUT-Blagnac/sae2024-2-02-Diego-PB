@@ -1,96 +1,90 @@
-import java.util.ArrayList;
+package iut.sae.algo;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class Simpliciteee {
 
 
-public class AlgoSimplicité1 {
+    // *************************************************************** ********************************************
+    // *************************************** Zone de test de l'algorithme ***************************************
+    // ************************************************************************************************************
 
-    public static String RLE(String in) {
+    public static void main(String[] args) throws AlgoException {
 
-        ArrayList<Character> listCaractere = new ArrayList<>();
-
-        for (int i = 0; i < in.length(); i++) {
-            listCaractere.add(in.charAt(i));
-        }
-
-        String resultat = "";
-        char currentchar = listCaractere.get(0);
-        int compteurChar = 0;
-
-        for (int i = 0; i < listCaractere.size(); i++) {
-            if (listCaractere.get(i) == currentchar) {
-                compteurChar++;
-            } else {
-                resultat += compteurChar + "" + currentchar;
-                currentchar = listCaractere.get(i);
-                compteurChar = 1;
-            }
-
-            if (compteurChar == 10) {
-                resultat = compteurChar - 1 + "" + currentchar;
-                currentchar = listCaractere.get(i);
-                compteurChar = 1;
-            }
-
-        }
-        resultat += compteurChar + "" + currentchar;
-
-        return resultat;
+        System.out.println("Test de l'algorithme de compression RLE (Run-Length Encoding) pour la chaine 'SAE' :");
+        String chaine = "SAE";
+        System.out.println("Chaine d'entrée : " + chaine);
+        String resultat = RLE(chaine);
+        System.out.println("Résultat de la compression RLE : " + resultat);
+        String decode = unRLE(resultat);
+        System.out.println("Résultat de la décompression RLE : " + decode);
+        assertEquals(chaine, decode);
+        System.out.println("Test réussi !");
+        System.out.println();
 
     }
 
-    public static String RLE(String in, int iteration) {
-        ArrayList<Character> listCaractere = new ArrayList<>();
-    
-        for (int i = 0; i < in.length(); i++) {
-            listCaractere.add(in.charAt(i));
-        }
+    // *************************************************************** ********************************************
+    // *************************************** Zone de test de l'algorithme ***************************************
+    // ************************************************************************************************************
 
-        String resultat = "";
-        char currentchar = listCaractere.get(0);
-        int compteurChar = 0;
 
-           
-            for (int i = 0; i < listCaractere.size(); i++) {
-                for (int compteurItération = 0; compteurItération<= iteration; compteurItération++) {
+    public static String RLE(String in){
 
-                if (listCaractere.get(i) == currentchar) {
-                    compteurChar++;
+        String stringReturn = "";
+
+        if (in.length() != 0) {
+
+            Character charSelect = in.charAt(0);
+            int nbChar = 1;
+
+            for (int i = 1; i < in.length(); i++) {
+                if (!charSelect.equals(in.charAt(i))) {
+                    stringReturn += nbChar+""+charSelect;
+                    charSelect = in.charAt(i);
+                    nbChar = 1;
                 } else {
-                    resultat += compteurChar + "" + currentchar;
-                    currentchar = listCaractere.get(i);
-                    compteurChar = 1;
+                    if (nbChar == 9) {
+                        stringReturn += nbChar+""+charSelect;
+                        nbChar = 1;
+                    } else {
+                        nbChar++;
+                    }
                 }
-
             }
+
+            if (nbChar != 0) {
+                stringReturn += nbChar+""+charSelect;
+            }
+
         }
-        
-        resultat += compteurChar + "" + currentchar;
-
-
-    
-        return resultat;
+        return stringReturn;
     }
 
-    public static String unRLE(String in) {
+    public static String RLE(String in, int iteration) throws AlgoException{
+        if (iteration < 1 ) throw new AlgoException("Impossible d'avoir une iteration < 1");
+        if (iteration == 1) return RLE(in);
 
-        ArrayList<Character> listCaractere = new ArrayList<>();
-        int i = 0;
-        String resultat = "" ;
-        while (i < in.length()) {
-            if (in.charAt(i) >= '0' || in.charAt(i) <= '9') {
-                int compteur = in.charAt(i) - '0';
-                char chars = in.charAt(i + 1);
+        return RLE(RLE(in, iteration-1));
+    }
 
-                for (int j = 0; j < compteur; j++) {
-                    listCaractere.add(chars);
-                }
-                i += 2;
-            } else {
-                listCaractere.add(in.charAt(i));
-                i++;
+    public static String unRLE(String in) throws AlgoException{
+        String result = "";
+
+        for (int i=0; i<in.length(); i += 2) {
+            for (int j=0; j< in.charAt(i) - '0'; j++) {
+                result += in.charAt(i+1);
             }
-            resultat ="" + listCaractere;
         }
-        
-        return resultat;
+
+        return result;
+    }
+
+    public static String unRLE(String in, int iteration) throws AlgoException{
+        if (iteration < 1 ) throw new AlgoException("Impossible d'avoir une iteration < 1");
+        if (iteration == 1) return unRLE(in);
+
+        return unRLE(unRLE(in, iteration-1));
     }
 }
+

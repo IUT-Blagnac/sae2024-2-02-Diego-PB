@@ -56,7 +56,26 @@ def unRLE_ite(input, iteration):
         chaineDecompresse = unRLE(chaineDecompresse)
     return ''.join(chaineDecompresse)
 
+# *************************************************************** ********************************************
+# *************************************** Zone de test de l'algorithme ***************************************
+# ************************************************************************************************************
 
-chaineEntree = "abc"
+chaineEntree = ""
 
 print(RLE(chaineEntree))
+
+def test_RLE():
+    assert RLE("") == ""
+    assert RLE("abc") == "1a1b1c"
+    assert RLE("abbccc") == "1a2b3c"
+    assert RLE("aaabaa") == "3a1b2a"
+    assert RLE("aAa") == "1a1A1a"
+    assert RLE("WWWWWWWWWWWWW") == "9W4W"
+
+test_RLE()
+
+print("Test RLE réussi")
+
+# *************************************************************** ********************************************
+# *************************************** Zone de test de l'algorithme ***************************************
+# ************************************************************************************************************

@@ -1,6 +1,38 @@
 package iut.sae.algo;
 
-public class Algo{
+public class azeaze { //11simplicite
+
+    // *************************************************************** ********************************************
+    // *************************************** Zone de test de l'algorithme ***************************************
+    // ************************************************************************************************************
+
+    public static void main(String[] args) {
+
+        // Test de l'algorithme RLE
+        String in = "SAE";
+        System.out.println("Entrée : "+in);
+        System.out.println("Sortie : "+ RLE(in));
+
+        // Test de l'algorithme RLE avec itération
+        in = "SAE";
+        int iterations = 2;
+        System.out.println("Entrée : "+in);
+        System.out.println("Itérations : "+iterations);
+        try{
+            System.out.println("Sortie : "+ RLE(in, iterations));
+        }
+        catch(AlgoException e){
+            System.err.println("Erreur lors de la transformation");
+        }
+
+
+    }
+
+    // *************************************************************** ********************************************
+    // *************************************** Zone de test de l'algorithme ***************************************
+    // ************************************************************************************************************
+
+
     public static String RLE(String in){
 
         String stringReturn = "";

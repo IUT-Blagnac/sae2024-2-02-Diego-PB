@@ -46,83 +46,107 @@
 
 == Evaluation des Algorithmes
 
-=== 59simplicite.java
+=== 59simplicite.java FAIT
 
 |===
 | Problème | Sanction
-| Es ce que l'algo compile ? | O/N
-| Es ce que l'anonymat est respecté ? | O/N 
-| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
-| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
-| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
-| Es ce que le l'algo passe tous les tests fournis initialement | O/N
-| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+| Es ce que l'algo compile ? | Oui
+| Es ce que l'anonymat est respecté ? | Oui
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | Oui
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | Oui
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | Le code fonctionne et passe les tests fournis initialement
+| Es ce que le l'algo passe tous les tests fournis initialement | Oui
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | Oui
 |===
 
-=== 26simplicite.py
+Remarque : L'algorithme est bien codé, il respecte les consignes et passe tous les tests.
 
-|===
-| Problème | Sanction
-| Es ce que l'algo compile ? | O/N
-| Es ce que l'anonymat est respecté ? | O/N 
-| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
-| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
-| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
-| Es ce que le l'algo passe tous les tests fournis initialement | O/N
-| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
-|===
+J'attribue la note de 20/20
 
-=== 07simplicite.py
+=== 26simplicite.py FAIT
 
 |===
 | Problème | Sanction
-| Es ce que l'algo compile ? | O/N
-| Es ce que l'anonymat est respecté ? | O/N 
-| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
-| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
-| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
-| Es ce que le l'algo passe tous les tests fournis initialement | O/N
-| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+| Es ce que l'algo compile ? | Oui
+| Es ce que l'anonymat est respecté ? | Oui
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | Oui
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | Oui
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | Oui
+| Es ce que le l'algo passe tous les tests fournis initialement | Oui
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | Oui
 |===
 
-=== 11simplicite.java
+Remarque : L'algorithme est bien codé, il respecte les consignes et passe tous les tests.
 
-|===
-| Problème | Sanction
-| Es ce que l'algo compile ? | O/N
-| Es ce que l'anonymat est respecté ? | O/N 
-| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
-| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
-| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
-| Es ce que le l'algo passe tous les tests fournis initialement | O/N
-| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
-|===
+J'attribue la note de 20/20
 
-=== 52simplicite.java
+=== 07simplicite.py FAIT
 
 |===
 | Problème | Sanction
-| Es ce que l'algo compile ? | O/N
-| Es ce que l'anonymat est respecté ? | O/N 
-| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
-| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
-| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
-| Es ce que le l'algo passe tous les tests fournis initialement | O/N
-| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+| Es ce que l'algo compile ? | Oui
+| Es ce que l'anonymat est respecté ? | Oui
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | Oui
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | Oui
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | Le code fonctionne et passe les tests fournis initialement
+| Es ce que le l'algo passe tous les tests fournis initialement | Oui
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | Oui
 |===
+
+Remarque : L'algorithme est bien codé, il respecte les consignes et passe tous les tests.
+
+J'attribue la note de 20/20
+
+=== 11simplicite.java FAIT
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | Oui
+| Es ce que l'anonymat est respecté ? | Oui
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | Oui
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | Oui
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | Le code fonctionne et passe les tests fournis initialement
+| Es ce que le l'algo passe tous les tests fournis initialement | Oui
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | Oui
+|===
+
+Remarque : L'algorithme est bien codé, il respecte les consignes et passe tous les tests.
+
+J'attribue la note de 20/20
+
+=== 52simplicite.java FAIT
+
+|===
+| Problème | Sanction
+| Es ce que l'algo compile ? | Oui
+| Es ce que l'anonymat est respecté ? | Oui
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | Oui
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | Oui
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | Le code fonctionne et passe les tests fournis initialement
+| Es ce que le l'algo passe tous les tests fournis initialement | Oui
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | Oui
+|===
+
+Remarque : L'algorithme est bien codé, il respecte les consignes et passe tous les tests.
+
+J'attribue la note de 20/20
 
 === 27efficacite.py
 
 |===
 | Problème | Sanction
-| Es ce que l'algo compile ? | O/N
-| Es ce que l'anonymat est respecté ? | O/N 
-| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | O/N
-| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | O/N
-| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | O/N
-| Es ce que le l'algo passe tous les tests fournis initialement | O/N
-| Es ce que le l'algo passe mes tests supplémentaires plus complets | O/N
+| Es ce que l'algo compile ? | Oui
+| Es ce que l'anonymat est respecté ? | Oui
+| Es ce que le l'algo respect de la consigne sur les méthodes de Java util (pour efficacité) | Oui
+| Es ce que le l'algo fonctionne ? (retour erronné, ou pas du bon type attendu) | Oui
+| Es ce que le l'algo fonctionne mais ne passe pas les tests fournis initialement | Le code fonctionne et passe les tests fournis initialement
+| Es ce que le l'algo passe tous les tests fournis initialement | Oui
+| Es ce que le l'algo passe mes tests supplémentaires plus complets | Oui
 |===
+
+Remarque : L'algorithme est bien codé, il respecte les consignes et passe tous les tests.
+
+J'attribue la note de 20/20
 
 === 25efficacite.java
 
