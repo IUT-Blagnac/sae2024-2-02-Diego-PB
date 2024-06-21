@@ -354,7 +354,7 @@ J'attribue la note de 20/20
 
 == Conclusion / Classement
 
-Voici le classement des algorithmes évalués (1 étant le meilleur et 10 le moins bon) :
+Voici le classement des algorithmes évalués (1 étant le meilleur) :
 
 === Pour la sobriété :
 
