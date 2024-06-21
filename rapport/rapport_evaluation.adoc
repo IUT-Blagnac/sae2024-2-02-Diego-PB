@@ -46,7 +46,7 @@
 
 == Evaluation des Algorithmes
 
-=== 59simplicite.java
+=== 59simplicite.java  
 
 |===
 | Problème | Sanction
@@ -64,13 +64,13 @@
 * Le code est lisible et bien structuré.
 
 * Les noms de variables sont explicites.
-** Certain nom de variable sont anglais et d'autre en francais, ce qui me fait penser que le developpeur deriere ce code a utilisé une ia.
+** Certain nom de variable sont anglais et d'autre en francais, ce qui me   penser que le developpeur deriere ce code a utilisé une ia.
 
 * Tout est correctement commenté.
 
 J'attribue la note de 20/20
-
-=== 26simplicite.py
+ 
+=== 26simplicite.py  
 
 |===
 | Problème | Sanction
@@ -89,12 +89,12 @@ J'attribue la note de 20/20
 
 * Les noms de variables sont explicites.
 
-* Le code pourait etre plus commenté (description de se que fait la fonction, des parametres de la fonctione et de se que cela retourne).
+* Le code pourait etre plus commenté (description de se que   la fonction, des parametres de la fonctione et de se que cela retourne).
 
 J'attribue la note de 20/20
 
-=== 07simplicite.py
-
+=== 07simplicite.py  
+ 
 |===
 | Problème | Sanction
 | Es ce que l'algo compile ? | Oui
@@ -116,7 +116,7 @@ J'attribue la note de 20/20
 
 J'attribue la note de 20/20
 
-=== 11simplicite.java
+=== 11simplicite.java  
 
 |===
 | Problème | Sanction
@@ -134,13 +134,13 @@ J'attribue la note de 20/20
 * Le code est lisible et bien structuré.
 
 * Les noms de variables sont explicites.
-** Certain nom de variable sont anglais et d'autre en francais, ce qui me fait penser que le developpeur deriere ce code a utilisé une ia.
+** Certain nom de variable sont anglais et d'autre en francais, ce qui me   penser que le developpeur deriere ce code a utilisé une ia.
 
 * Tout est correctement commenté.
 
 J'attribue la note de 20/20
 
-=== 52simplicite.java
+=== 52simplicite.java  
 
 |===
 | Problème | Sanction
@@ -158,11 +158,11 @@ J'attribue la note de 20/20
 * Le code est lisible et bien structuré.
 
 * Les noms de variables sont explicites.
-** Certain nom de variable sont anglais et d'autre en francais, ce qui me fait penser que le developpeur deriere ce code a utilisé une ia.
+** Certain nom de variable sont anglais et d'autre en francais, ce qui me   penser que le developpeur deriere ce code a utilisé une ia.
 
 J'attribue la note de 20/20
 
-=== 27efficacite.py
+=== 27efficacite.py  
 
 |===
 | Problème | Sanction
@@ -175,16 +175,17 @@ J'attribue la note de 20/20
 | Es ce que le l'algo passe mes tests supplémentaires plus complets | Oui
 |===
 
-* L'algorithme est bien codé, il respecte les consignes et passe tous les tests.
+La complexité de la fonction RLE(chaine) est dominée par la boucle principale qui parcourt chaque caractère de la chaîne d'entrée. Cependant, l'utilisation de l'opérateur + pour la concaténation de chaînes dans une boucle peut entraîner une complexité cumulée de O(n^2) dans le pire des cas.
 
-* Le code est lisible et bien structuré.
+* Complexité temporelle
+** Boucle principale : O(n)
+** Opérations internes de concaténation de chaînes : O(n^2)
 
-* Les noms de variables sont explicites.
-** Certain nom de variable sont anglais et d'autre en francais, ce qui me fait penser que le developpeur deriere ce code a utilisé une ia.
+L'algorithme original a une complexité O(n^2) en raison de l'utilisation de l'opérateur + pour la concaténation de chaînes. La version améliorée utilise une liste pour construire la chaîne de sortie, réduisant ainsi la complexité temporelle totale à O(n), ce qui le rend bien plus performant et adapté aux chaînes de grande taille.
 
 J'attribue la note de 20/20
 
-=== 25efficacite.java
+=== 25efficacite.java  
 
 |===
 | Problème | Sanction
@@ -197,17 +198,17 @@ J'attribue la note de 20/20
 | Es ce que le l'algo passe mes tests supplémentaires plus complets | Oui
 |===
 
-* L'algorithme est bien codé, il respecte les consignes et passe tous les tests.
+La complexité de la méthode RLE(String in) est dominée par la boucle principale qui parcourt chaque caractère de in. Les opérations effectuées à chaque itération de la boucle sont toutes O(1), et l'utilisation de StringBuilder pour la construction de la chaîne de sortie assure que les opérations d'ajout sont également O(1).
 
-* Le code est lisible et bien structuré.
+* La complexité temporelle de l'algorithme est  :
+** Boucle principale : O(n)
+** Opérations finales : O(n)
 
-* Les noms de variables sont explicites.
-
-* Le code pourait etre plus commenté (description de se que fait la fonction, des parametres de la fonctione et de se que cela retourne).
+Cet algorithme est performant avec une complexité temporelle O(n). En utilisant StringBuilder, il évite les inefficacités des opérations de concaténation de chaînes, ce qui le rend bien adapté pour des applications pratiques de compression RLE.
 
 J'attribue la note de 20/20
 
-=== 24efficacite.java
+=== 24efficacite.java  
 
 |===
 | Problème | Sanction
@@ -220,11 +221,13 @@ J'attribue la note de 20/20
 | Es ce que le l'algo passe mes tests supplémentaires plus complets | Oui
 |===
 
-* L'algorithme est bien codé, il respecte les consignes et passe tous les tests.
+L'algorithme comporte une boucle principale qui parcourt chaque caractère de la chaîne d'entrée. Cependant, l'utilisation de l'opérateur += dans une boucle peut entraîner une complexité cumulée de O(n^2) dans le pire des cas, car chaque concaténation de chaîne avec += en Java crée une nouvelle chaîne.
 
-* Le code est lisible et bien structuré.
+* Complexité temporelle de la méthode précédente : O(n) grâce à l'utilisation de StringBuilder pour la construction de la chaîne de sortie.
 
-* Les noms de variables sont explicites.
+* Complexité temporelle de la méthode actuelle : O(n^2) en raison de l'utilisation de l'opérateur += pour la concaténation de chaînes dans une boucle.
+
+L'algorithme actuel, bien qu'il fonctionne correctement pour des chaînes de petite taille, peut devenir inefficace pour des chaînes plus longues. L'utilisation de StringBuilder est recommandée pour améliorer la performance et réduire la complexité à O(n).
 
 J'attribue la note de 20/20
 
@@ -258,17 +261,17 @@ J'attribue la note de 0/20
 | Es ce que le l'algo passe mes tests supplémentaires plus complets | Oui
 |===
 
-* L'algorithme est bien codé, il respecte les consignes et passe tous les tests.
+* La complexité de la méthode RLE(String texte) est dominée par la boucle principale qui parcourt chaque caractère de texte. Donc, la complexité temporelle est O(n), où n est la longueur de texte.
 
-* Le code est lisible et bien structuré.
+* Efficacité : Pour un seul passage de compression RLE, l'algorithme est efficace avec une complexité linéaire O(n).
 
-* Les noms de variables sont explicites.
+* Extensibilité : Lorsqu'il est appelé plusieurs fois avec le paramètre nombre, la complexité augmente linéairement avec nombre, ce qui est attendu.
 
-* Le code pourait etre plus commenté (description de se que fait la fonction, des parametres de la fonctione et de se que cela retourne).
+L'algorithme est bien conçu pour la compression RLE. Cependant, dans des scénarios où nombre est très grand, l'algorithme pourrait devenir inefficace, mais pour des valeurs raisonnables de nombre, il reste performant.
 
 J'attribue la note de 20/20
 
-=== 46sobriete.java
+=== 46sobriete.java 
 
 |===
 | Problème | Sanction
@@ -281,17 +284,14 @@ J'attribue la note de 20/20
 | Es ce que le l'algo passe mes tests supplémentaires plus complets | Oui
 |===
 
-* L'algorithme est bien codé, il respecte les consignes et passe tous les tests.
-
-* Le code est lisible et bien structuré.
-
-* Les noms de variables sont explicites.
-
-* Le code devrait etre plus commenté (description de se que fait la fonction, des parametres de la fonctione et de se que cela retourne).
+* Efficacité énergétique : 
+** L'algorithme Java est raisonnablement efficace en termes de temps d'exécution et de mémoire utilisée. L'utilisation de StringBuilder est judicieuse pour éviter la création de nouvelles chaînes immuables à chaque concaténation, ce qui améliore l'efficacité. Les allocations dynamiques sont gérées de manière efficace.
+* Optimisation potentielle : 
+** L'algorithme est déjà relativement optimisé pour les allocations dynamiques. Cependant, il pourrait y avoir des gains supplémentaires en ajustant finement la gestion des tailles de mémoire pour StringBuilder afin de minimiser les redimensionnements internes.
 
 J'attribue la note de 20/20
 
-=== 36sobriete.java
+=== 36sobriete.java 
 
 |===
 | Problème | Sanction
@@ -304,18 +304,14 @@ J'attribue la note de 20/20
 | Es ce que le l'algo passe mes tests supplémentaires plus complets | Oui
 |===
 
-* L'algorithme est bien codé, il respecte les consignes et passe tous les tests.
-
-* Le code est lisible et bien structuré.
-
-* Les noms de variables sont explicites.
-
-* Le code devrait etre plus commenté (description de se que fait la fonction, des parametres de la fonctione et de se que cela retourne).
-** description de fonctionnalité utilisé comme le type "short"
+* Efficacité énergétique : 
+** L'algorithme Java est raisonnablement efficace en termes de temps d'exécution et de mémoire utilisée. L'utilisation de StringBuilder est judicieuse pour éviter la création de nouvelles chaînes immuables à chaque concaténation, ce qui améliore l'efficacité.
+* Optimisation potentielle : 
+** Une optimisation pourrait consister à réduire les allocations dynamiques en utilisant des structures de données plus efficaces et en prévoyant une taille de mémoire plus précise pour StringBuilder.
 
 J'attribue la note de 20/20
 
-=== 20sobriete.java
+=== 20sobriete.java 
 
 |===
 | Problème | Sanction
@@ -328,17 +324,14 @@ J'attribue la note de 20/20
 | Es ce que le l'algo passe mes tests supplémentaires plus complets | Oui
 |===
 
-* L'algorithme est bien codé, il respecte les consignes et passe tous les tests.
-
-* Le code est lisible et bien structuré.
-
-* Les noms de variables sont explicites.
-
-* Le code est bien commenté.
+* Efficacité énergétique : 
+** L'algorithme Java est raisonnablement efficace en termes de temps d'exécution et de mémoire utilisée. L'utilisation de StringBuilder améliore l'efficacité par rapport aux opérations sur les chaînes de caractères immuables.
+* Optimisation potentielle : 
+** Une optimisation pourrait consister à réduire les allocations dynamiques en utilisant des structures de données plus efficaces et en prévoyant une taille de mémoire plus précise pour StringBuilder.
 
 J'attribue la note de 20/20
 
-=== 61sobriete.c
+=== 61sobriete.c 
 
 |===
 | Problème | Sanction
@@ -351,12 +344,37 @@ J'attribue la note de 20/20
 | Es ce que le l'algo passe mes tests supplémentaires plus complets | Oui
 |===
 
-* L'algorithme est bien codé, il respecte les consignes et passe tous les tests.
+* Efficacité énergétique : 
+** L'algorithme semble être relativement efficace en termes de temps d'exécution et de mémoire utilisée, étant donné qu'il traite les données linéairement. Cependant, les allocations dynamiques fréquentes peuvent augmenter la consommation d'énergie.
 
-* Le code est lisible et bien structuré.
-
-* Les noms de variables sont explicites.
-
-* Le code pourait etre plus commenté (description de se que fait la fonction, des parametres de la fonctione et de se que cela retourne).
+* Optimisation potentielle : 
+** Une optimisation pourrait consister à éviter les allocations dynamiques multiples en prévoyant une taille de mémoire plus précise ou en utilisant des structures de données plus efficaces. Par exemple, en allouant une fois la mémoire nécessaire pour chaineFinale et en ajustant les indices plutôt que de réallouer la mémoire à chaque fois.
 
 J'attribue la note de 20/20
+
+== Conclusion / Classement
+
+Voici le classement des algorithmes évalués (1 étant le meilleur et 10 le moins bon) :
+
+=== Pour la sobriété :
+
+* 1 : 61sobriete.c
+* 2 : 46sobriete.java
+* 3 : 20sobriete.java
+* 4 : 36sobriete.java
+
+=== Pour la simplicité :
+
+* 1 : 11simplicite.java
+* 2 : 59simplicite.java
+* 3 : 52simplicite.java
+* 4 : 07simplicite.py
+* 5 : 26simplicite.py
+
+=== Pour l'efficacité :
+
+* 1 : 27efficacite.py
+* 2 : 61efficacite.java
+* 3 : 25efficacite.java
+* 4 : 24efficacite.java  
+* 5 : 10efficacite.java
