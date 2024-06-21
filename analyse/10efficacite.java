@@ -1,8 +1,35 @@
 package iut.sae.algo;
 
 
-public class Algo{
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class Algo10{
+    // *************************************************************** ********************************************
+    // *************************************** Zone de test de l'algorithme ***************************************
+    // ************************************************************************************************************
+
+    public static void main(String[] args) throws AlgoException {
+
+        System.out.println("Test de l'algorithme de compression RLE (Run-Length Encoding) pour la chaine 'SAE' :");
+        String chaine = "SAE";
+        System.out.println("Chaine d'entrée : " + chaine);
+        String resultat = RLE(chaine);
+        System.out.println("Résultat de la compression RLE : " + resultat);
+        String decode = unRLE(resultat);
+        System.out.println("Résultat de la décompression RLE : " + decode);
+        assertEquals(chaine, decode);
+        System.out.println("Test réussi !");
+        System.out.println();
+    }
+
+    // *************************************************************** ********************************************
+    // *************************************** Zone de test de l'algorithme ***************************************
+    // ************************************************************************************************************
+
+
     public static String RLE(String in){
+
+
         // Provide your algo here
         String RLE="";
         int j;
@@ -14,7 +41,7 @@ public class Algo{
             }
             RLE+=String.valueOf(j)+lettre;
         }
-         return RLE;
+        return RLE;
     }
 
     public static String RLE(String in, int iteration) throws AlgoException{
@@ -25,11 +52,11 @@ public class Algo{
     }
 
     public static String unRLE(String in) throws AlgoException{
-       if(in.length()/2!=1){
+        if(in.length()/2!=1){
             return ("unRLE impossible : taille incorrecte");
-       }
-       String unRLE="";
-       for(int i=0;i<in.length();i=i+2){
+        }
+        String unRLE="";
+        for(int i=0;i<in.length();i=i+2){
             switch (in.charAt(i)) {
                 case 1:
                     for(int j=0;j<in.charAt(i);j++){
@@ -39,7 +66,7 @@ public class Algo{
                 case 2:
                     for(int j=0;j<in.charAt(i);j++){
                         unRLE+=in.charAt(i+1);
-                    }    
+                    }
                     break;
                 case 3:
                     for(int j=0;j<in.charAt(i);j++){
@@ -78,10 +105,10 @@ public class Algo{
                     break;
                 default:
                     return("unRLE impossible: fautes d'impementation");
-                    break;
+                break;
             }
-       }
-       return unRLE;
+        }
+        return unRLE;
     }
 
     public static String unRLE(String in, int iteration) throws AlgoException{
@@ -90,6 +117,6 @@ public class Algo{
         }
         return in;
     }
-    
+
 }
 

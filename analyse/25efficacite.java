@@ -1,9 +1,34 @@
 package iut.sae.algo;
 
 
-public class Efficacite {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class Efficacite { //25eff
+
+    // *************************************************************** ********************************************
+    // *************************************** Zone de test de l'algorithme ***************************************
+    // ************************************************************************************************************
+
+    public static void main(String[] args) throws AlgoException {
+
+        System.out.println("Test de l'algorithme de compression RLE (Run-Length Encoding) pour la chaine 'SAE' :");
+        String chaine = "SAE";
+        System.out.println("Chaine d'entrée : " + chaine);
+        String resultat = RLE(chaine);
+        System.out.println("Résultat de la compression RLE : " + resultat);
+        String decode = unRLE(resultat);
+        System.out.println("Résultat de la décompression RLE : " + decode);
+        assertEquals(chaine, decode);
+        System.out.println("Test réussi !");
+        System.out.println();
+    }
+
+    // *************************************************************** ********************************************
+    // *************************************** Zone de test de l'algorithme ***************************************
+    // ************************************************************************************************************
+
     public static String RLE(String in){
-        
+
         // Cas chaîne vide
         if(in == null || in.isEmpty()) {
             return "";
@@ -28,12 +53,12 @@ public class Efficacite {
         }
 
         resultat.append(cpt).append(dernierChar); // On ajoute le dernier compteur et le dernier caractère au résultat
-        
+
         return resultat.toString(); // On retourne le résultat
     }
 
     public static String RLE(String in, int iteration) throws AlgoException{
-        
+
         // Cas chaîne vide
         if(in == null || in.isEmpty()) {
             return "";
@@ -51,20 +76,20 @@ public class Efficacite {
     }
 
     public static String unRLE(String in) throws AlgoException{
-        
+
         // Cas chaîne vide
         if(in == null || in.isEmpty()) {
             return "";
         }
 
         StringBuilder resultat = new StringBuilder(); // Résultat
-        
+
         for(int i =0; i < in.length(); i++) { // Parcours de la chaîne
             if(Character.isDigit(in.charAt(i))) { // Si le caractère i est un chiffre
                 int nbFois = Character.getNumericValue(in.charAt(i)); // On récupère le chiffre
                 if(nbFois >= 9){ // Si le chiffre est supérieur ou égal à 9
                     for(int j = 0; j < 9; j++) { // On ajoute le caractère suivant au résultat 9 fois
-                        resultat.append(in.charAt(i+1)); 
+                        resultat.append(in.charAt(i+1));
                     }
                     for(int j = 0; j < nbFois-9; j++) { // On ajoute le caractère suivant au résultat (nbFois-9) fois
                         resultat.append(in.charAt(i+1));
@@ -74,7 +99,7 @@ public class Efficacite {
                         resultat.append(in.charAt(i+1));
                     }
                 }
-            } 
+            }
         }
 
         return resultat.toString(); // On retourne le résultat

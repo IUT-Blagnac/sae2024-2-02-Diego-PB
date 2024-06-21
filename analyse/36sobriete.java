@@ -1,16 +1,42 @@
 package iut.sae.algo;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class Algo{
+
+    // *************************************************************** ********************************************
+    // *************************************** Zone de test de l'algorithme ***************************************
+    // ************************************************************************************************************
+
+    public static void main(String[] args) throws AlgoException {
+
+        System.out.println("Test de l'algorithme de compression RLE (Run-Length Encoding) pour la chaine 'SAE' :");
+        String chaine = "SAE";
+        System.out.println("Chaine d'entrée : " + chaine);
+        String resultat = RLE(chaine);
+        System.out.println("Résultat de la compression RLE : " + resultat);
+        String decode = unRLE(resultat);
+        System.out.println("Résultat de la décompression RLE : " + decode);
+        assertEquals(chaine, decode);
+        System.out.println("Test réussi !");
+        System.out.println();
+
+    }
+
+    // *************************************************************** ********************************************
+    // *************************************** Zone de test de l'algorithme ***************************************
+    // ************************************************************************************************************
+
     public static String RLE(String in){
 
         if (in == null || in.isEmpty()){
             return "";
         }
-    
+
         StringBuilder resultat = new StringBuilder();
         char nouv_char = in.charAt(0);
         short compteur = 1;
-    
+
         for (int i = 1; i < in.length(); i++) {
             if (nouv_char != in.charAt(i) || compteur == 9) {
                 resultat.append(compteur).append(nouv_char);
@@ -41,7 +67,7 @@ public class Algo{
 
         StringBuilder resultat = new StringBuilder();
         short nb_ite = (short)(in.length());
-        
+
         for (short i = 0; i < nb_ite; i+=2){
             short jMax = (short) Character.getNumericValue(in.charAt(i));
             for (short j = 0; j < jMax ;j++){

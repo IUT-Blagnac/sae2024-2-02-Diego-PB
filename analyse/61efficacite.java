@@ -1,4 +1,31 @@
-public class efficacite {
+package iut.sae.algo;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class efficacite {//61eff
+
+    // *************************************************************** ********************************************
+    // *************************************** Zone de test de l'algorithme ***************************************
+    // ************************************************************************************************************
+
+    public static void main(String[] args) throws AlgoException {
+
+        System.out.println("Test de l'algorithme de compression RLE (Run-Length Encoding) pour la chaine 'SAE' :");
+        String chaine = "SAE";
+        System.out.println("Chaine d'entrée : " + chaine);
+        String resultat = RLE(chaine);
+        System.out.println("Résultat de la compression RLE : " + resultat);
+        String decode = unRLE(resultat);
+        System.out.println("Résultat de la décompression RLE : " + decode);
+        assertEquals(chaine, decode);
+        System.out.println("Test réussi !");
+        System.out.println();
+
+    }
+
+    // *************************************************************** ********************************************
+    // *************************************** Zone de test de l'algorithme ***************************************
+    // ************************************************************************************************************
 
     public static String RLE(String texte) {
         // si le texte est null ou vide, retourne une chaîne vide
